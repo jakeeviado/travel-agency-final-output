@@ -9,4 +9,17 @@ class tbl_orderPackages extends Model
 {
     /** @use HasFactory<\Database\Factories\TblOrderPackagesFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'service_id',
+        'pricing_id',
+        'quantity',
+        'participants',
+        'travel_date',
+        'total_price',
+        'order_status',
+        'payment_status',
+        'payment_method',
+    ];
 }

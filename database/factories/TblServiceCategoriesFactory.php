@@ -17,7 +17,12 @@ class TblServiceCategoriesFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'category_name' => $this->faker->word(),
+            'category_description' => $this->faker->sentence(),
+            'category_image' => $this->faker->imageUrl(640, 480, 'business', true),
+            'is_active' => $this->faker->boolean(),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }

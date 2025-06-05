@@ -9,4 +9,13 @@ class tbl_serviceCategories extends Model
 {
     /** @use HasFactory<\Database\Factories\TblServiceCategoriesFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'category_name',
+        'category_description',
+        'category_image',
+        'is_active',
+        'created_at',
+        'updated_at',
+    ];
 }
