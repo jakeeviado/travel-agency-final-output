@@ -2,18 +2,17 @@
 
 namespace Database\Seeders;
 
+use App\Models\tblPackages;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\TblOrders;
 
-class TblOrdersSeeder extends Seeder
+class TblPackagesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        //
-        TblOrders::factory()->count(10)->create();
+        tblPackages::factory()->create();
     }
 }

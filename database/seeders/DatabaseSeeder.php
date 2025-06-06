@@ -2,9 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\tblDestinations;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,11 +22,10 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
-        $this->call([TblCartSeeder::class]);
-        $this->call([TblOrderPackagesSeeder::class]);
-        $this->call([TblOrders::class]);
-        $this->call([TblServiceCategories::class]);
-        $this->call([TblServicePricing::class]);
-        $this->call([TblServicesSeeder::class]);
+        $this->call([
+            TblDestinationsSeeder::class,
+            TblPackagesSeeder::class,
+            TblPricingsSeeder::class,
+        ]);
     }
 }
