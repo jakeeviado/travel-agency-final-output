@@ -18,11 +18,11 @@
                 class="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200">
                 Destinations
             </a>
-            <a href="/hotels" class="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200">
-                Hotels
-            </a>
             <a href="/bookings" class="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200">
                 Bookings
+            </a>
+            <a href="/aboutus" class="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200">
+                About Us
             </a>
             <a href="/login" class="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200">
                 Login
