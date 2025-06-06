@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\TblOrderPackages;
 
 class TblOrderPackagesSeeder extends Seeder
 {
@@ -13,5 +14,6 @@ class TblOrderPackagesSeeder extends Seeder
     public function run(): void
     {
         //
+        TblOrderPackages::factory()->count(10)->create();
     }
 }
