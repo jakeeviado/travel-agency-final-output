@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\TblCart;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\tbl_cart>

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class tbl_servicePricing extends Model
+class TblServicePricing extends Model
 {
     /** @use HasFactory<\Database\Factories\TblServicePricingFactory> */
     use HasFactory;

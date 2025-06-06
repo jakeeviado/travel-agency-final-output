@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\TblServiceCategories;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\tbl_serviceCategories>

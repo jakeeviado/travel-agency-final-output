@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\TblServices;
 
 class TblServicesSeeder extends Seeder
 {
@@ -13,5 +14,6 @@ class TblServicesSeeder extends Seeder
     public function run(): void
     {
         //
+        TblServices::factory()->count(10)->create();
     }
 }
