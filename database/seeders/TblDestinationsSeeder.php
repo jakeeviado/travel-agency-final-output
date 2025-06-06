@@ -2,18 +2,17 @@
 
 namespace Database\Seeders;
 
+use App\Models\tblDestinations;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\TblCart;
 
-class TblCartSeeder extends Seeder
+class TblDestinationsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        //
-        TblCart::factory()->count(10)->create();
+        tblDestinations::factory()->create();
     }
 }
