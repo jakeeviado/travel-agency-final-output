@@ -44,7 +44,7 @@
                             <span class="badge discounted">Discounted!</span>
                         @endif
 
-                        {{-- <a href="{{ route('package.show', $package->id) }}">View Details</a> --}}
+                        <a href="{{ route('package.show', $package->package_id) }}" class="text-red-500">View Details</a>
                     </div>
                 @endforeach
             </div>

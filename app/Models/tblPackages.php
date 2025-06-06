@@ -10,6 +10,9 @@ class tblPackages extends Model
     /** @use HasFactory<\Database\Factories\TblPackagesFactory> */
     use HasFactory;
 
+    protected $primaryKey = 'package_id';
+    protected $table = 'tbl_packages';
+
     protected $fillable = [
         'destination_id',
         'package_name',
