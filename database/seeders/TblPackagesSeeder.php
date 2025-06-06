@@ -13,6 +13,6 @@ class TblPackagesSeeder extends Seeder
      */
     public function run(): void
     {
-        tblPackages::factory()->create();
+        tblPackages::factory(15)->create();
     }
 }

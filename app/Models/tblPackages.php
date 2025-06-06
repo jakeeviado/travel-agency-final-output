@@ -22,4 +22,10 @@ class tblPackages extends Model
         'is_popular',
         'is_discounted',
     ];
+
+
+    public function destination()
+    {
+        return $this->belongsTo(tblDestinations::class, 'destination_id', 'destination_id');
+    }
 }

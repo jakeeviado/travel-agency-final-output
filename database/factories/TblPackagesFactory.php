@@ -19,7 +19,7 @@ class TblPackagesFactory extends Factory
         return [
             'pricing_id' => \App\Models\tblPricings::factory(),
             'destination_id' => \App\Models\tblDestinations::factory(),
-            'package_name' => $this->faker->unique()->word(),
+            'package_name' => $this->faker->unique()->sentence(rand(2, 4), false),
             'description' => $this->faker->sentence(),
             'duration' => $this->faker->numberBetween(1, 30),
             'is_active' => $this->faker->boolean(),
