@@ -22,6 +22,4 @@ class TblPackagesController extends Controller
             return redirect()->back()->with('error', 'Package not found');
         }
     }
-
-
 }
