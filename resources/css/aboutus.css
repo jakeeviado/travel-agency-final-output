@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.logo span {
+    display: block;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a, .nav-links li button {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-btn {
+    padding: 6px 12px;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.about-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.intro-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.intro-text h1 {
+    font-size: 2rem;
+}
+
+.intro-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.quote-section blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.developers-section {
+    text-align: center;
+}
+
+.developers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.developer-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 220px;
+    text-align: center;
+}
+
+.developer-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.developer-card h3 {
+    margin: 0.5rem 0 0.2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;       
+    padding: 1rem 2rem;
+    border-top: 1px solid #ccc; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
