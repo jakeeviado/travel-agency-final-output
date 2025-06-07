@@ -55,53 +55,56 @@
 
     <section class="destinations">
         <h2>Our Top Destinations</h2>
-        <div class="destination-cards">
-            <div class="destination">
-                <img src="https://assets.vogue.in/photos/667922097830445356ea2be9/3:4/w_2560%2Cc_limit/Paris.jpg"
-                    alt="Paris" />
-                <div class="info">
-                    <h3>Paris</h3>
-                    <p>₱ 22,999 - 5 Days Trip</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="destination-cards">
-            <div class="destination">
-                <img src="https://exodus-website.s3.amazonaws.com/uploads/2022/08/japan-kyoto-1024x646.jpg"
-                    alt="Japan" />
-                <div class="info">
-                    <h3>Japan</h3>
-                    <p>₱ 19,599 - 7 Days Trip</p>
-                </div>
-            </div>
-        </div>
+        @if ($packages->count() === 0)
+            <p class="text-center text-lg text-gray-600">No packages found at the moment. Please check back later!</p>
+        @else
 
-        <div class="destination-cards">
-            <div class="destination">
-                <img src="https://res.cloudinary.com/enchanting/q_80,f_auto,c_lfill,x_w_mul_0.49,y_h_mul_0.53,g_xy_center,w_360,h_270/exodus-web/2023/02/shutterstock_2131706207.jpg"
-                    alt="Vietnam" />
-                <div class="info">
-                    <h3>Vietnam</h3>
-                    <p>₱ 24,399 - 7 Days Trip</p>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                @foreach ($packages as $package)
+
+                    <a href="{{ route('package.show', $package->package_id) }}">
+                        <div class="bg-white  overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
+
+                            <img src="{{ asset('path/to/your/package/image.jpg') }}" alt="{{ $package->package_name }}"
+                                class="w-full h-48 object-cover">
+
+                            <div class="p-6">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-2">{{ $package->package_name }}</h2>
+                                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                    {{ Str::limit($package->description, 120) }}
+                                </p>
+
+                                <p class="text-md text-gray-700 mb-2">{{ $package->duration }} days trip
+                                </p>
+
+                                @if ($package->destination)
+                                    <p class="text-md text-gray-700 mb-1">
+                                        {{ $package->destination->country }}, {{ $package->destination->city }}
+                                    </p>
+
+                                @else
+                                    <p class="text-md text-gray-700 mb-4">Destination: <span class="text-red-500">Not
+                                            available</span>
+                                    </p>
+                                @endif
+
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    @if ($package->is_discounted)
+                                        <span
+                                            class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Discounted!</span>
+                                    @endif
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </a>
+
+                @endforeach
             </div>
-        </div>
-        <!-- <div class="destination">
-        <img src="japan.jpg" alt="Japan" />
-        <div class="info">
-          <h3>Japan</h3>
-          <p>₱ 19,599 - 7 Days Trip</p>
-        </div>
-      </div>
-      <div class="destination">
-        <img src="vietnam.jpg" alt="Vietnam" />
-        <div class="info">
-          <h3>Vietnam</h3>
-          <p>₱ 24,399 - 7 Days Trip</p>
-        </div>
-      </div>
-    </div> -->
+        @endif
     </section>
 
     <x-footer />
