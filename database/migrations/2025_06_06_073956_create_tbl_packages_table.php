@@ -20,6 +20,7 @@ return new class extends Migration {
             $table->boolean('is_active')->default(true);
             $table->dateTime('departure_date')->nullable();
             $table->dateTime('return_date')->nullable();
+            $table->string('image_url')->nullable();
             $table->boolean('is_featured')->default(false);
             $table->boolean('is_popular')->default(false);
             $table->boolean('is_discounted')->default(false);

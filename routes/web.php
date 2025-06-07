@@ -10,3 +10,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [TblPackagesController::class, 'fetchAllPackages'])->name('packages.index');
 
 Route::get('/packages/{package_id}', [TblPackagesController::class, 'fetchPackageById'])->name('package.show');
+<<<<<<< HEAD
+=======
+
+Route::get('/aboutus', function () {
+    return view('aboutus');
+});
+
+Route::get('/destinations', function () {
+    return view('productspage');
+});
+>>>>>>> master

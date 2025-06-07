@@ -11,45 +11,108 @@
 <body>
     <x-navigation />
 
-    <div>
-        <h1>All Available Packages</h1>
+    <header class="hero">
+        <div class="overlay">
+            <h1>Live a life to the
+                fullest, make your
+                memories with us -
+                Book now!</h1>
+            <button>Find out more</button>
+        </div>
+    </header>
+
+    <section class="services">
+        <h2>We Offer Best Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="../images/weather.png" class="img-weather" alt="Image Not Available" />
+                </img>
+                <h3>Calculated Weather</h3>
+                <p>Get accurate, location-based weather forecasts.</p>
+            </div>
+            <div class="card">
+                <img src="../images/plane.png" class="img-plane" alt="Image Not Available" />
+                </img>
+                <h3>Affordable Flights</h3>
+                <p>Find and book budget-friendly flights to your chosen destination.</p>
+            </div>
+            <div class="card">
+                <img src="../images/microphone.png" class="img-microphone" alt="Image Not Available" />
+                </img>
+                <h3>Cultural Experience</h3>
+                <p>Explore rich traditions and cultures of each place.</p>
+            </div>
+            <div class="card">
+                <img src="../images/customize.png" class="img-customize" alt="Image Not Available" />
+                </img>
+                <h3>Custom Travel Package</h3>
+                <p>We design trips tailored to your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- To be populated -->
+
+    <section class="destinations">
+        <h2>Our Top Destinations</h2>
 
         @if ($packages->count() === 0)
-            <p>No packages found at the moment.</p>
+            <p class="text-center text-lg text-gray-600">No packages found at the moment. Please check back later!</p>
         @else
-            <div class="packages-container">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 @foreach ($packages as $package)
-                    <div class="package-card">
-                        <h2>{{ $package->package_name }}</h2>
-                        <p>Description: {{ $package->description }}</p>
-                        <p>Duration: {{ $package->duration }}</p>
 
-                        @if ($package->destination)
-                            <p>Destination: {{ $package->destination->country }}</p>
-                            <p>Location: {{ $package->destination->city }}</p>
-                        @else
-                            <p>Destination: Not available</p>
-                        @endif
+                    <a href="{{ route('package.show', $package->package_id) }}">
+                        <div class="bg-white  overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
 
-                        <p>Departure Date: {{ \Carbon\Carbon::parse($package->departure_date)->format('M d, Y') }}</p>
-                        <p>Return Date: {{ \Carbon\Carbon::parse($package->return_date)->format('M d, Y') }}</p>
+                            <img src="{{ asset($package->image_url) }}" alt="{{ $package->package_name }}"
+                                class="w-full h-48 object-cover">
 
-                        @if ($package->is_featured)
-                            <span class="badge featured">Featured</span>
-                        @endif
-                        @if ($package->is_popular)
-                            <span class="badge popular">Popular</span>
-                        @endif
-                        @if ($package->is_discounted)
-                            <span class="badge discounted">Discounted!</span>
-                        @endif
+                            <div class="p-6">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-2">{{ $package->package_name }}</h2>
+                                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                    {{ Str::limit($package->description, 120) }}
+                                </p>
 
+                                <p class="text-md text-gray-700 mb-2">{{ $package->duration }} days trip
+                                </p>
+
+                                @if ($package->destination)
+                                    <p class="text-md text-gray-700 mb-1">
+                                        {{ $package->destination->country }}, {{ $package->destination->city }}
+                                    </p>
+
+                                @else
+                                    <p class="text-md text-gray-700 mb-4">Destination: <span class="text-red-500">Not
+                                            available</span>
+                                    </p>
+                                @endif
+
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    @if ($package->is_discounted)
+                                        <span
+                                            class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Discounted!</span>
+                                    @endif
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </a>
+
+<<<<<<< HEAD
                         <a href="{{ route('package.show', $package->package_id) }}" class="text-red-500">View Details</a>
                     </div>
+=======
+>>>>>>> master
                 @endforeach
             </div>
         @endif
-    </div>
+    </section>
+
+    <x-footer />
 </body>
 
 </html>

@@ -11,3 +11,183 @@
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
 }
+
+.hero {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sabtang_Batanes.jpg/1200px-Sabtang_Batanes.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.content {
+  text-align: center;
+  color: #250202;
+  font-size: 2em;
+  padding: 20px;
+  max-width: 80%;
+}
+
+.section {
+text-align: center;
+  color: #1f1f2e;
+  font-size: 2em;
+  padding-top: 100px;
+  max-width: 80%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.1);
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-family: "Afacad Flux";
+  font-size: 3em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.overlay button {
+  background: #867a68;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "Afacad Flux";
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  /* font-weight: bold; */
+}
+
+.services {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-family: "Afacad Flux";
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.img-weather {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 70;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+.img-plane {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 120;
+  height: 120;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.img-microphone {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 50;
+  height: 130;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+.img-customize {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 60;
+  height: 120;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.card {
+  background: #FFF1DA;
+  padding: 20px;
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.destinations {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.destinations h2 {
+  font-family: "Afacad Flux";
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.destination-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width:fit-content;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.destination-cards:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.298);
+}
+
+.destination {
+  background: #fff;
+  width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.destination img {
+  width: 150%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination .info {
+  padding: 10px;
+}
