@@ -19,6 +19,7 @@ class tblPackages extends Model
         'description',
         'duration',
         'is_active',
+        'image_url',
         'departure_date',
         'return_date',
         'is_featured',
