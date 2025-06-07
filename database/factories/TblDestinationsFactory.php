@@ -20,7 +20,7 @@ class TblDestinationsFactory extends Factory
             'country' => $this->faker->country(),
             'city' => $this->faker->city(),
             'description' => $this->faker->sentence(),
-            'image_url' => $this->faker->imageUrl(640, 480, 'travel', true),
+            // 'image_url' => $this->faker->imageUrl(640, 480, 'travel', true),
             'is_available' => $this->faker->boolean(80),
             'is_top_destination' => $this->faker->boolean(50),
         ];

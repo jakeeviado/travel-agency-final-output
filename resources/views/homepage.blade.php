@@ -66,7 +66,7 @@
                     <a href="{{ route('package.show', $package->package_id) }}">
                         <div class="bg-white  overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
 
-                            <img src="{{ asset('path/to/your/package/image.jpg') }}" alt="{{ $package->package_name }}"
+                            <img src="{{ asset($package->image_url) }}" alt="{{ $package->package_name }}"
                                 class="w-full h-48 object-cover">
 
                             <div class="p-6">
