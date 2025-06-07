@@ -95,18 +95,9 @@
                                             class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Discounted!</span>
                                     @endif
                                 </div>
-
-
                             </div>
                         </div>
-
                     </a>
-
-<<<<<<< HEAD
-                        <a href="{{ route('package.show', $package->package_id) }}" class="text-red-500">View Details</a>
-                    </div>
-=======
->>>>>>> master
                 @endforeach
             </div>
         @endif
