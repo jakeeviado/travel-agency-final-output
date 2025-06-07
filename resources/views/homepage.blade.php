@@ -105,6 +105,27 @@
                 @endforeach
             </div>
         @endif
+
+        <div class="destination-cards">
+            <div class="destination">
+                <img src="https://assets.vogue.in/photos/667922097830445356ea2be9/3:4/w_2560%2Cc_limit/Paris.jpg"
+                    alt="Paris" />
+                <div class="info">
+                    <h3>Paris</h3>
+                    <p>₱ 22,999 - 5 Days Trip</p>
+                </div>
+            </div>
+        </div>
+
+
+                            </div>
+                        </div>
+
+                    </a>
+
+                @endforeach
+            </div>
+        @endif
     </section>
 
     <x-footer />
