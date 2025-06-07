@@ -1,0 +1,209 @@
+/* General Reset and Fonts */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Container */
+.v18_2 {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.v18_3, .v18_158 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Destination Card */
+.v18_4, .v18_63, .v18_14, .v18_24, .v18_117, .v18_127, .v18_137, .v18_147,
+.v18_159, .v18_169, .v18_179, .v18_189 {
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.v18_4:hover, .v18_63:hover, .v18_14:hover, .v18_24:hover, .v18_117:hover,
+.v18_127:hover, .v18_137:hover, .v18_147:hover, .v18_159:hover, .v18_169:hover,
+.v18_179:hover, .v18_189:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Placeholder */
+.v18_5 {
+  height: 180px;
+  background-color: #ba4141;
+  background-image: url("https://media.istockphoto.com/id/1150571683/photo/camilo-beach-at-algarve-portugal-with-turquoise-sea-in-background-wooden-footbridge-to-beach.jpg?s=612x612&w=0&k=20&c=ITI2lLRqfMx56y2Og2dlWuirJK_4eYmK-urz9kgUy_I=");
+  background-size: cover;
+  background-position: center;
+}
+
+.v18_64 {
+  height: 180px;
+  background-color: #ba4141;
+  background-image: url("https://www.shutterstock.com/image-illustration/vintage-travel-background-retro-photos-600nw-1936008868.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.v18_15 {
+  height: 180px;
+  background-color: #ba4141;
+  background-image: url("https://i.natgeofe.com/n/3012ffcc-7361-45f6-98b3-a36d4153f660/colosseum-daylight-rome-italy.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.v18_25 {
+  height: 180px;
+  background-color: #ba4141;
+  background-image: url("https://cms.inspirato.com/ImageGen.ashx?image=%2Fmedia%2F5682444%2FLondon_Dest_16531610X.jpg&width=1081.5");
+  background-size: cover;
+  background-position: center;
+}
+
+.v18_118 {
+  height: 180px;
+  background-color: #ba4141;
+  background-image: url("https://lp-cms-production.imgix.net/2025-04/Shutterstock1502282249.jpg?w=3840&auto=format&q=75");
+  background-size: cover;
+  background-position: center;
+}
+
+.v18_128 {
+  height: 180px;
+  background-color: #ba4141;
+  background-image: url("https://hips.hearstapps.com/hmg-prod/images/city-of-alesund-norway-royalty-free-image-1620376302.?crop=1xw:0.84415xh;center,top&resize=1200:*");
+  background-size: cover;
+  background-position: center;
+}
+
+.v18_138 {
+  height: 180px;
+  background-color: #ba4141;
+  background-image: url("https://www.planetware.com/wpimages/2020/02/belgium-in-pictures-beautiful-places-to-photograph-canal-ghent.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.v18_148 {
+  height: 180px;
+  background-color: #ba4141;
+  background-image: url("https://www.trafalgar.com/real-word/wp-content/uploads/sites/3/2018/04/Toledo-Spain-www.istockphoto.com_gb_photo_toledo-spain-gm464975554-58756952-SeanPavonePhoto.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* tipid section*/
+
+.v18_160 {
+  height: 180px;
+  background-color: #ba4141;
+  background-image: url("https://skyticket.com/guide/wp-content/uploads/2024/12/94a5b8f8-shutterstock_2410881993-680x510-680x510.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.v18_170 {
+  height: 180px;
+  background-color: #ba4141;
+  background-image: url("https://www.outlooktravelmag.com/media/vietnam-1-1611926800.profileImage.2x-jpg-webp.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.v18_180 {
+  height: 180px;
+  background-color: #ba4141;
+  background-image: url("https://media.istockphoto.com/id/590050726/photo/singapore-glowing-at-night.jpg?s=612x612&w=0&k=20&c=43tSsy1yC0iOAGL3ZVq3-nl84KnmWTnHGI5mwQtp8zo=");
+   background-size: cover;
+  background-position: center;
+}
+
+.v18_190 {
+  height: 180px;
+  background-color: #ba4141;
+  background-image: url("https://plus.unsplash.com/premium_photo-1661955632358-85564b2810b2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kb25lc2lhJTIwaXNsYW5kfGVufDB8fDB8fHww");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Card Content */
+.v18_6, .v18_65, .v18_16, .v18_26, .v18_119, .v18_129, .v18_139, .v18_149,
+.v18_161, .v18_171, .v18_181, .v18_191 {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Title */
+.v18_8, .v18_67, .v18_18, .v18_28, .v18_121, .v18_131, .v18_141, .v18_151,
+.v18_163, .v18_173, .v18_183, .v18_193 {
+  font-family: 'Jacques Francois', serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Trip Duration */
+.v18_12, .v18_71, .v18_22, .v18_32, .v18_125, .v18_135, .v18_145, .v18_155,
+.v18_167, .v18_177, .v18_187, .v18_197 {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Price */
+.v18_13, .v18_72, .v18_23, .v18_33, .v18_126, .v18_136, .v18_146, .v18_156,
+.v18_168, .v18_178, .v18_188, .v18_198 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #009688;
+}
+
+/* Section Title */
+.v18_239 {
+  font-family: 'Irish Grover', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #2c3e50;
+}
+
+/* Filter/Search Section */
+.v19_2 {
+  text-align: center;
+  font-family: 'Joan', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.v20_8 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.v20_18 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  flex-wrap: wrap;
+}
