@@ -91,6 +91,8 @@
                             class="px-4 py-2 text-sm border border-gray-300 rounded-md hover:bg-gray-50 transition-colors">Share</button>
                         <button
                             class="px-4 py-2 text-sm border border-gray-300 rounded-md hover:bg-gray-50 transition-colors">Email</button>
+                        <button
+                            class="px-4 py-2 text-sm border border-gray-300 rounded-md hover:bg-gray-50 transition-colors">View Tour</button>
                     </div>
                 </div>
             </div>
