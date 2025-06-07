@@ -32,7 +32,7 @@
 }
 
 .section {
-text-align: center;
+  text-align: center;
   color: #1f1f2e;
   font-size: 2em;
   padding-top: 100px;
@@ -166,7 +166,7 @@ body {
   width:fit-content;
   margin-left: 20px;
   margin-bottom: 40px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .destination-cards:hover {
@@ -180,6 +180,7 @@ body {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 20px;
 }
 
 .destination img {

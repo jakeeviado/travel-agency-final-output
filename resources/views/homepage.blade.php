@@ -17,7 +17,10 @@
                 fullest, make your
                 memories with us -
                 Book now!</h1>
-            <button>Find out more</button>
+            <a href="/destinations"
+                class="text-white-700 hover:text-gray-400 font-medium transition-colors duration-200">
+                <button>Find out more</button>
+            </a>
         </div>
     </header>
 
@@ -59,10 +62,8 @@
         @if ($packages->count() === 0)
             <p class="text-center text-lg text-gray-600">No packages found at the moment. Please check back later!</p>
         @else
-
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                @foreach ($packages as $package)
-
+                @foreach ($packages as $package)          
                     <a href="{{ route('package.show', $package->package_id) }}">
                         <div class="bg-white  overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
 
@@ -99,7 +100,7 @@
                         </div>
                     </a>
                 @endforeach
-            </div>
+                </div>
         @endif
     </section>
 

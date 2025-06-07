@@ -1,0 +1,68 @@
+
+
+    .tour-plan {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .tour-plan h1 {
+      color: #1a1a1a;
+      margin-bottom: 2rem;
+    }
+
+    .day {
+      display: flex;
+      position: relative;
+      padding-left: 60px;
+      margin-bottom: 2rem;
+    }
+
+    .day::before {
+      content: "";
+      position: absolute;
+      left: 25px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #ddd;
+    }
+
+    .day-number {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: #ea5b3c;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .day-content h3 {
+      margin: 0;
+      color: #2b2b2b;
+    }
+
+    .day-content p {
+      margin: 0.5rem 0;
+      color: #555;
+    }
+
+    .features {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    .features li::before {
+      content: "★";
+      margin-right: 5px;
+      color: #f0ad4e;
+    }
+
+    .features li {
+      margin-bottom: 5px;
+    }

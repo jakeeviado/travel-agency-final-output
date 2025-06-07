@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $package->package_name }} - Details</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/tourdescription.css', 'resources/js/app.js'])
 </head>
 
 <body class="bg-gray-50">
@@ -62,7 +63,7 @@
                 </div>
 
                 <!-- Details Section -->
-                <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-4">Package Details:</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                         <div class="space-y-2">
@@ -91,6 +92,69 @@
                             class="px-4 py-2 text-sm border border-gray-300 rounded-md hover:bg-gray-50 transition-colors">Share</button>
                         <button
                             class="px-4 py-2 text-sm border border-gray-300 rounded-md hover:bg-gray-50 transition-colors">Email</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-4">Tour Details:</h2>
+                    <div class="day">
+                      <div class="day-number">01</div>
+                      <div class="day-content">
+                        <h3>Day 1: Departure</h3>
+                        <p>Qui Tempor Voluptate Qui Quis Commodi Rem Praesentium Alias Ut Voluptates Officia Sed Molestiae Sint Et Voluptas Quae.</p>
+                        <ul class="features">
+                          <li>5 Star Accommodation</li>
+                          <li>Breakfast</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="day">
+                      <div class="day-number">02</div>
+                      <div class="day-content">
+                        <h3>Day 2: Visiting Zurich, Geneva And Zermatt</h3>
+                        <p>Donec Quam Felis, Ultricies Nec, Pellentesque Eu, Pretium Quis, Sem.</p>
+                        <ul class="features">
+                          <li>5 Star Accommodation</li>
+                          <li>Breakfast</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="day">
+                      <div class="day-number">03</div>
+                      <div class="day-content">
+                        <h3>Day 3: Rest</h3>
+                        <p>Curabitur Ullamcorper Ultrices Nisi. Nam Eget Duis Auctor Sit Amet Aliquet Nunc.</p>
+                        <ul class="features">
+                          <li>5 Star Accommodation</li>
+                          <li>Breakfast</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="day">
+                      <div class="day-number">04</div>
+                      <div class="day-content">
+                        <h3>Day 4: Historical Tour</h3>
+                        <p>Donec Quam Felis, Ultricies Nec, Pellentesque Eu, Pretium Quis, Sem.</p>
+                        <ul class="features">
+                          <li>5 Star Accommodation</li>
+                          <li>Breakfast</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="day">
+                      <div class="day-number">05</div>
+                      <div class="day-content">
+                        <h3>Day 5: Return</h3>
+                        <p>Donec Quam Felis, Ultricies Nec, Pellentesque Eu, Pretium Quis, Sem.</p>
+                        <ul class="features">
+                          <li>5 Star Accommodation</li>
+                          <li>Breakfast</li>
+                        </ul>
+                      </div>
                     </div>
                 </div>
             </div>
