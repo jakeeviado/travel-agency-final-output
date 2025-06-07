@@ -18,5 +18,11 @@ class TblPackagesController extends Controller
         return view('productDescription')->with('package', $package);
     }
 
+      public function fetchAllPackagesProducts()
+    {
+        $packages = tblPackages::with('destination')->get();
+        return view('productspage')->with('packages', $packages);
+    }
+
 
 }

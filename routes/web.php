@@ -15,6 +15,4 @@ Route::get('/aboutus', function () {
     return view('aboutus');
 });
 
-Route::get('/destinations', function () {
-    return view('productspage');
-});
+Route::get('/destinations', [TblPackagesController::class, 'fetchAllPackagesProducts']);
