@@ -105,54 +105,6 @@
                 @endforeach
             </div>
         @endif
-
-        <div class="destination-cards">
-            <div class="destination">
-                <img src="https://assets.vogue.in/photos/667922097830445356ea2be9/3:4/w_2560%2Cc_limit/Paris.jpg"
-                    alt="Paris" />
-                <div class="info">
-                    <h3>Paris</h3>
-                    <p>₱ 22,999 - 5 Days Trip</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="destination-cards">
-            <div class="destination">
-                <img src="https://exodus-website.s3.amazonaws.com/uploads/2022/08/japan-kyoto-1024x646.jpg"
-                    alt="Japan" />
-                <div class="info">
-                    <h3>Japan</h3>
-                    <p>₱ 19,599 - 7 Days Trip</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="destination-cards">
-            <div class="destination">
-                <img src="https://res.cloudinary.com/enchanting/q_80,f_auto,c_lfill,x_w_mul_0.49,y_h_mul_0.53,g_xy_center,w_360,h_270/exodus-web/2023/02/shutterstock_2131706207.jpg"
-                    alt="Vietnam" />
-                <div class="info">
-                    <h3>Vietnam</h3>
-                    <p>₱ 24,399 - 7 Days Trip</p>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="destination">
-        <img src="japan.jpg" alt="Japan" />
-        <div class="info">
-          <h3>Japan</h3>
-          <p>₱ 19,599 - 7 Days Trip</p>
-        </div>
-      </div>
-      <div class="destination">
-        <img src="vietnam.jpg" alt="Vietnam" />
-        <div class="info">
-          <h3>Vietnam</h3>
-          <p>₱ 24,399 - 7 Days Trip</p>
-        </div>
-      </div>
-    </div> -->
     </section>
 
     <x-footer />
