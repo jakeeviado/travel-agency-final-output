@@ -14,3 +14,7 @@ Route::get('/packages/{package_id}', [TblPackagesController::class, 'fetchPackag
 Route::get('/aboutus', function () {
     return view('aboutus');
 });
+
+Route::get('/destinations', function () {
+    return view('productspage');
+});
