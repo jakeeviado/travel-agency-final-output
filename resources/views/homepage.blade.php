@@ -11,45 +11,96 @@
 <body>
     <x-navigation />
 
-    <div>
-        <h1>All Available Packages</h1>
-
-        @if ($packages->count() === 0)
-            <p>No packages found at the moment.</p>
-        @else
-            <div class="packages-container">
-                @foreach ($packages as $package)
-                    <div class="package-card">
-                        <h2>{{ $package->package_name }}</h2>
-                        <p>Description: {{ $package->description }}</p>
-                        <p>Duration: {{ $package->duration }}</p>
-
-                        @if ($package->destination)
-                            <p>Destination: {{ $package->destination->country }}</p>
-                            <p>Location: {{ $package->destination->city }}</p>
-                        @else
-                            <p>Destination: Not available</p>
-                        @endif
-
-                        <p>Departure Date: {{ \Carbon\Carbon::parse($package->departure_date)->format('M d, Y') }}</p>
-                        <p>Return Date: {{ \Carbon\Carbon::parse($package->return_date)->format('M d, Y') }}</p>
-
-                        @if ($package->is_featured)
-                            <span class="badge featured">Featured</span>
-                        @endif
-                        @if ($package->is_popular)
-                            <span class="badge popular">Popular</span>
-                        @endif
-                        @if ($package->is_discounted)
-                            <span class="badge discounted">Discounted!</span>
-                        @endif
-
-                        <a href="{{ route('package.show', $package->package_id) }}" class="text-red-500">View Details</a>
-                    </div>
-                @endforeach
-            </div>
-        @endif
+    <header class="hero">
+    <div class="overlay">
+      <h1>Live a life to the 
+      fullest, make your 
+      memories with us -
+      Book now!</h1>
+      <button>Find out more</button>
     </div>
+  </header>
+
+  <section class="services">
+    <h2>We Offer Best Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="../images/weather.png" class="img-weather" alt="Image Not Available" />
+                </img>
+        <h3>Calculated Weather</h3>
+        <p>Get accurate, location-based weather forecasts.</p>
+      </div>
+      <div class="card">
+        <img src="../images/plane.png" class="img-plane" alt="Image Not Available" />
+                </img>
+        <h3>Affordable Flights</h3>
+        <p>Find and book budget-friendly flights to your chosen destination.</p>
+      </div>
+      <div class="card">
+        <img src="../images/microphone.png" class="img-microphone" alt="Image Not Available" />
+                </img>
+        <h3>Cultural Experience</h3>
+        <p>Explore rich traditions and cultures of each place.</p>
+      </div>
+      <div class="card">
+        <img src="../images/customize.png" class="img-customize" alt="Image Not Available" />
+                </img>
+        <h3>Custom Travel Package</h3>
+        <p>We design trips tailored to your needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- To be populated -->
+
+  <section class="destinations">
+    <h2>Our Top Destinations</h2>
+    <div class="destination-cards">
+      <div class="destination">
+        <img src="https://assets.vogue.in/photos/667922097830445356ea2be9/3:4/w_2560%2Cc_limit/Paris.jpg" alt="Paris" />
+        <div class="info">
+          <h3>Paris</h3>
+          <p>₱ 22,999 - 5 Days Trip</p>
+        </div>
+      </div>
+</div>
+
+<div class="destination-cards">
+        <div class="destination">
+        <img src="https://exodus-website.s3.amazonaws.com/uploads/2022/08/japan-kyoto-1024x646.jpg" alt="Japan" />
+        <div class="info">
+          <h3>Japan</h3>
+          <p>₱ 19,599 - 7 Days Trip</p>
+        </div>
+      </div>
+</div>
+
+<div class="destination-cards">
+        <div class="destination">
+        <img src="https://res.cloudinary.com/enchanting/q_80,f_auto,c_lfill,x_w_mul_0.49,y_h_mul_0.53,g_xy_center,w_360,h_270/exodus-web/2023/02/shutterstock_2131706207.jpg" alt="Vietnam" />
+        <div class="info">
+          <h3>Vietnam</h3>
+          <p>₱ 24,399 - 7 Days Trip</p>
+        </div>
+      </div>
+</div>
+      <!-- <div class="destination">
+        <img src="japan.jpg" alt="Japan" />
+        <div class="info">
+          <h3>Japan</h3>
+          <p>₱ 19,599 - 7 Days Trip</p>
+        </div>
+      </div>
+      <div class="destination">
+        <img src="vietnam.jpg" alt="Vietnam" />
+        <div class="info">
+          <h3>Vietnam</h3>
+          <p>₱ 24,399 - 7 Days Trip</p>
+        </div>
+      </div>
+    </div> -->
+  </section>
+        
 </body>
 
 </html>
