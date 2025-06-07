@@ -102,11 +102,6 @@
 
                     </a>
 
-<<<<<<< HEAD
-                        <a href="{{ route('package.show', $package->package_id) }}" class="text-red-500">View Details</a>
-                    </div>
-=======
->>>>>>> master
                 @endforeach
             </div>
         @endif
