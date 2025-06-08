@@ -16,3 +16,7 @@ Route::get('/aboutus', function () {
 });
 
 Route::get('/destinations', [TblPackagesController::class, 'fetchAllPackagesProducts']);
+
+Route::get('/bookings', function () {
+    return view('bookings');
+});

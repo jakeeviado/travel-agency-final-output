@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Joan&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Google+Sans&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Irish+Grover&display=swap" rel="stylesheet" />
-  @vite(['resources/css/productspage.css', 'resources/css/app.css', 'resources/js/app.js'])
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
   <x-navigation />

@@ -57,7 +57,7 @@
     <!-- To be populated -->
 
     <section class="destinations">
-        <h2>Our Top Destinations</h2>
+        <h2>Our Top Destinations Package</h2>
 
         @if ($packages->count() === 0)
             <p class="text-center text-lg text-gray-600">No packages found at the moment. Please check back later!</p>
